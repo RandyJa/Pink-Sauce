@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+    <!---<link rel="icon" type="image/x-icon" href="pink_300x.avif"> !--->
+    <title>The Pink Sauce</title>
+    <style>
+        body{
+            margin:0%;
+        }
+
+        h2{
+            color:rgb(255, 127, 219);
+            align-content:space-between;
+            padding:3px;
+            text-align: center;
+            font-size: 100px;
+            margin:0%;
+            font-family: 'Dangrek', cursive;
+        }
+
+        h1{
+            text-align: justify;
+            color:white;
+            font-size: 25px;
+            background-color: rgb(255, 127, 219);
+            font-family: 'Dangrek', cursive;
+            padding:20px;
+            margin: 0%;
+        }
+
+        h3{
+            display: flex;
+            justify-content:center;
+            font-size: 40px;
+            color:rgb(255, 127, 219);
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        h4{
+            font-size: 15px;
+        }
+
+        h5{
+            font-size: 13px;
+        }
+
+        #bear{
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            right:50px;
+            margin-left: 400px;
+            margin-right: 400px;
+            border-radius: 20px;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        #dog{
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            margin-left: 400px;
+            margin-right: 400px;
+            border-radius: 20px;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        #cat{
+            border: 20px;
+        }
+
+        legend{
+            font-size: 30px;
+            text-align: justify;
+            color:rgb(255, 127, 219);
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            background-color: rgb(255, 127, 219);
+            padding:60px;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <heading>
+        <h1>Home</h1>
+        <h2>Pink Sauce</h2>
+    </heading>
+
+    <h3>Payment Form</h3>
+
+    <form>
+    <fieldset id="bear">
+    <legend>Information</legend><br>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="first" value="" pattern="[a-z-A-z]*" required>
+        <br>
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="last" value="" pattern="[a-z-A-z]*" required>
+        <br>
+        <br>
+        <label for="SA">Street Address</label>
+        <input type="text" id="SA" name="Adress" required>
+        <br>
+        <br>
+        <label for="ci">City</label>
+        <input type="text" id="ci" name="city" pattern="[a-z-A-z]*[^0-9]" required>
+        <br>
+        <br>
+        <label for="sta">State</label>
+        <input type="text" id="sta" name="state" pattern="[a-z-A-z]*[^0-9]" required>
+        <br>
+        <br>
+        <label for="PS">Postal Code</label>
+        <input type="number" id="PS" name="postal" pattern="\d[0-9]" required>
+        <br>
+        <br>
+        <label for="count">Country</label>
+        <input type="text" id="count" name="try" pattern="[a-z-A-z]*[^0-9]" required>
+        <br>
+        <br>
+        <label for="PN">Phone Number</label>
+        <input type="text" id="PN" name="number" pattern="^\d{3}-\d{3}-\d{4}" required>
+        <br>
+        <br>
+</fieldset>
+
+<br>
+
+<fieldset id="dog">
+<legend>Credit Card Information</legend><br>
+        <label for="CCN">Credit Card Number</label>
+        <input type="number" id="CCN" name="credit" required>
+        <br>
+        <br>
+        <label for="ED">Expiration Date</label>
+        <input type="month" id="ED" name="id" required>
+        <br>
+        <br>
+        <label for="cv">CVV</label>
+        <input type="number" id="cv" name="cvv" required>
+        <br>
+        <br>
+        <input type="submit">
+</fieldset>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+    <img src="facebook.png" style="width:50px;height:50px">
+    <h4>Terms of Use Privacy Policy</h4>
+    <h5>&copy Copyright</h5>
+</footer>
+
+</body>
+</html>
